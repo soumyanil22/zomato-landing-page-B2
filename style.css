@@ -7,11 +7,37 @@ body{
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
 }
+.button__primary{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #ffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+ .button__primary:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #ffff;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 }
 .navbar__brand{
     width: 100px;
@@ -28,26 +54,76 @@ body{
   );
   color: #ffff;
   border: none;
-  padding: 12px;
+  padding: 20px;
   border-radius: 6px;
+  cursor: pointer;
+}
+/*.nav__item:hover{
+    border: 2px solid blue;
+}*/
+.hero__image__container{
+    width: 100%;
+}
+.hero__image{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.hero__text{
+    font-size: 50px;
+    margin: 20px 0;
 }
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
-        padding: 10px 30px;
+        padding: 2px 30px;
+    }
+    .hero__container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 }
-@media (min-width:1020px) {
+@media (min-width:1080px) {
+    body{
+        margin-top: -40px;
+    }
+   .navbar__brand{
+       margin-top: 20px;
+       margin-bottom: -20px;
+   }
+
+   .navbar__nav__items{
+      margin-top: 30px;
+      margin-bottom: -10px;
+    
+   }
+   
+    .container{
+        max-width: 1100px;
+        padding-top: 40px;
+    }
     .navbar__brand{
         width: 150px;
     }
+    .button__primary{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+   
     .nav__item{
-        padding: 20px;
-        font-size: 20px ;
+        padding: 1rem 1.5rem;
+        font-size: 1rem ;
+    }
+    .hero__description{
+        width: 100%;
+    } 
+    .hero__text{
+        font-size: 2.7rem;
+
+        font-weight:900;
     }
 }
-.nav__item:hover{
-    cursor: pointer;
-    border: 2px solid blue;
-}
+    
 
