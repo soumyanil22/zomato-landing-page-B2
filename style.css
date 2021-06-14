@@ -176,14 +176,31 @@ body{
     font-weight: 900;
 }
 
-.email__input{
-    margin-left: 30px;
-    padding-left: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    border: 1px solid pink;
-    border-radius: 3px;
+.quote__container{
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+     
+}
+
+.bg_img_container{
+    width: 100%;
+}
+
+.bg__img{
+    width: 100%;
+    background-color: blue;
+    opacity: 60%;
+}
+
+.quote_image_text{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    margin-top: -130px;
+    text-align: center;
+    color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -265,6 +282,18 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 170px;
+    }
+
+    .bg_img_container{
+        height: 300px;
+        margin-bottom: 150px;
+    }   
+    .bg__img{
+        height: 400px;
+    }
+    
+    .quote_image_text{
+        font-size: 25px;
     }
 }
 @media (min-width:1080px) {
